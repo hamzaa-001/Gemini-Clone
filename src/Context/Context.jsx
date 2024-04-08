@@ -38,10 +38,6 @@ const ContextProvider = (props) => {
       response = await runChat(input);
     }
 
-    // setRecentPrompt(input);
-    // setPrevPrompt((prev) => [...prev, input]);
-    // const response = await runChat(input);
-
     let responseArray = response.split("**");
     let newResponse = "";
     for (let i = 0; i < responseArray.length; i++) {
@@ -76,7 +72,7 @@ const ContextProvider = (props) => {
     resultData,
     setResultData,
     onSent,
-    newChat,  
+    newChat,
   };
 
   return (
